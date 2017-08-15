@@ -13,6 +13,31 @@ namespace ExpressCraftDemo
         public GridView View;
         public SplitHideControlContainer hideSplitter;
 
+        /// <summary>
+        /// Hide Tile Control Menu
+        /// </summary>
+        protected override void OnLostFocus()
+        {
+            base.OnLostFocus();
+            if (Pages is TileControl &&
+                Pages.As<TileControl>().ViewState == TileViewState.Visible)
+            {
+                Pages.As<TileControl>().ViewState = TileViewState.Hidden;
+            }
+        }
+
+        /// <summary>
+        /// Hide or Show
+        /// </summary>
+        public override void OnMenuClick()
+        {
+            if (Pages is TileControl)
+                Pages.As<TileControl>().ViewState = Pages.As<TileControl>().ViewState == TileViewState.Hidden ?
+                    TileViewState.Visible : TileViewState.Hidden;
+
+            base.OnMenuClick();
+        }
+
         public void AddColumn(DataType data)
         {            
             var dt = View.DataSource;
