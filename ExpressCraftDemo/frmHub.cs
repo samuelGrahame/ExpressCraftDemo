@@ -73,6 +73,7 @@ namespace ExpressCraftDemo
 
             if(Helper.NotDesktop)
             {
+                ShowMenu = true;
                 Pages = new TileControl();
             }
             else

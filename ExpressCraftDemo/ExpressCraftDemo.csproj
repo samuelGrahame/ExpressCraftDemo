@@ -62,7 +62,16 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\Bridge\bridge.js" />
+    <Content Include="bin\Debug\Bridge\bridge.meta.js" />
+    <Content Include="bin\Debug\Bridge\ExpressCraft.css" />
+    <Content Include="bin\Debug\Bridge\ExpressCraft.js" />
+    <Content Include="bin\Debug\Bridge\ExpressCraft.meta.js" />
+    <Content Include="bin\Debug\Bridge\ExpressCraftDemo.js" />
+    <Content Include="bin\Debug\Bridge\ExpressCraftDemo.meta.js" />
     <Content Include="bin\Debug\Bridge\index.html" />
+    <Content Include="bin\Debug\Bridge\jquery-2.2.4.js" />
+    <Content Include="bin\Debug\Bridge\newtonsoft.json.js" />
     <Content Include="Bridge\ExpressCraft.css">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
