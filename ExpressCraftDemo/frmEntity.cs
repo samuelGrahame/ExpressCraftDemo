@@ -55,8 +55,8 @@ namespace ExpressCraftDemo
             }
             var page = new RibbonPage("Entity");
             page.AddRibbonGroups(new RibbonGroup("Actions", new RibbonButton[] {
-                new RibbonButton("Save"),
-                new RibbonButton("Close") { OnItemClick = (sender) => {
+                new RibbonButton("Save") { Icon = Images.x32x32Save },
+                new RibbonButton("Close") { Icon = Images.x32x32Close, OnItemClick = (sender) => {
                     this.Close();
                 } }
             }));

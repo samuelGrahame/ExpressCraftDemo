@@ -37,6 +37,7 @@
     <Compile Include="frmDialogs.cs" />
     <Compile Include="frmEntity.cs" />
     <Compile Include="frmHub.cs" />
+    <Compile Include="Images.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

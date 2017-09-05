@@ -115,17 +115,18 @@ namespace ExpressCraftDemo
 
             page.AddRibbonGroups(
                 new RibbonGroup("Actions",
-                new RibbonButton("Add Row") { OnItemClick = (sender) => {
+                new RibbonButton("Add Row") { Icon = Images.x32x32New, OnItemClick = (sender) => {
                     if (View.DataSource == null)
                         new MessageBoxForm("Please add a column", MessageBoxLayout.Information).ShowDialog();
                     else
                     {
                         AddRow();
-                    }                    
+                    }
                 } },
                 new RibbonButton("Add 1000 Row's")
                 {
                     BeginGroup = true,
+                    Icon = Images.x32x32New,
                     OnItemClick = (sender) => {
                         if (View.DataSource == null)
                             new MessageBoxForm("Please add a column", MessageBoxLayout.Information).ShowDialog();
@@ -140,31 +141,38 @@ namespace ExpressCraftDemo
                         }
                     }
                 },
-                new RibbonButton("Add String Column") { BeginGroup = true, OnItemClick = (sender) => {
-                    AddColumn(DataType.String);
-                } },
+                new RibbonButton("Add String Column") {
+                    Icon = Images.x32x32Text,
+                    BeginGroup = true, OnItemClick = (sender) => {
+                        AddColumn(DataType.String);
+                    } },
                 new RibbonButton("Add Date Column") { BeginGroup = true,
+                    Icon = Images.x32x32Date,
                     OnItemClick = (sender) => {
                         AddColumn(DataType.DateTime);
                     }
                 },
                 new RibbonButton("Add Integer Column") { BeginGroup = true,
+                    Icon = Images.x32x32Data,
                     OnItemClick = (sender) => {
                         AddColumn(DataType.Integer);
                     }
                 },
                 new RibbonButton("Add Long Column") { BeginGroup = true,
+                    Icon = Images.x32x32Data,
                     OnItemClick = (sender) => {
                         AddColumn(DataType.Long);
                     }
                 },
                 new RibbonButton("Add Decimal Column") { BeginGroup = true,
+                    Icon = Images.x32x32Currency,
                     OnItemClick = (sender) => {
                         AddColumn(DataType.Decimal);
                     }
                 },
                 new RibbonButton("Auto Column Width")
                 {
+                    Icon = Images.x32x32Columns,
                     BeginGroup = true,
                     OnItemClick = (sender) => {
                         if(View.ColumnAutoWidth)
