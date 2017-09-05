@@ -1,7 +1,7 @@
 /**
  * @version 1.0.0.0
  * @copyright Copyright ©  2017
- * @compiler Bridge.NET 16.0.1
+ * @compiler Bridge.NET 16.2.1
  */
 Bridge.assembly("ExpressCraftDemo", function ($asm, globals) {
     "use strict";
@@ -367,7 +367,7 @@ Bridge.assembly("ExpressCraftDemo", function ($asm, globals) {
             var $t;
             ExpressCraft.Settings.AllowCloseWithoutQuestion = true;
             if (ExpressCraft.Helper.NotDesktop) {
-                document.head.appendChild(($t = document.createElement('meta'), $t.name = "viewport", $t.content = "width=device-width,maximum-scale=1,minimum-scale=1", $t));
+                document.head.appendChild(($t = document.createElement("meta"), $t.name = "viewport", $t.content = "width=device-width,maximum-scale=1,minimum-scale=1", $t));
             }
 
             ExpressCraft.Application.Run(new ExpressCraftDemo.frmHub());
