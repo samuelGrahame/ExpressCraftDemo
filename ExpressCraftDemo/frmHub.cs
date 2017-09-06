@@ -110,7 +110,7 @@ namespace ExpressCraftDemo
 
             View = new GridView(false);
             View.SetBoundsFull();
-
+            View.ShowFindPanel();
             View.UseEditForm = false;
 
             page.AddRibbonGroups(
