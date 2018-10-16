@@ -49,7 +49,7 @@
       <HintPath>..\packages\Bridge.Html5.17.4.0\lib\net40\Bridge.Html5.dll</HintPath>
     </Reference>
     <Reference Include="ExpressCraft, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ExpressCraft.0.4.9\lib\ExpressCraft.dll</HintPath>
+      <HintPath>..\packages\ExpressCraft.0.5.0\lib\ExpressCraft.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Bridge.Newtonsoft.Json.1.11.0\lib\net40\Newtonsoft.Json.dll</HintPath>

@@ -51,12 +51,12 @@ namespace ExpressCraftDemo
             }
             else
             {
-                Pages = new RibbonControl(RibbonControl.RibbonType.Compact);
+                Pages = new RibbonControl();
             }
             var page = new RibbonPage("Entity");
             page.AddRibbonGroups(new RibbonGroup("Actions", new RibbonButton[] {
                 new RibbonButton("Save") { Icon = Images.x32x32Save },
-                new RibbonButton("Close") { Icon = Images.x32x32Close, OnItemClick = (sender) => {
+                new RibbonButton("Close") { Icon = Images.x32x32Close, ItemClick = (sender) => {
                     this.Close();
                 } }
             }));
