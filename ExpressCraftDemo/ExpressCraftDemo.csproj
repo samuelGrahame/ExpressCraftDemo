@@ -92,8 +92,6 @@
     <Content Include="bin\Debug\Bridge\ExpressCraftDemo.js" />
     <Content Include="bin\Debug\Bridge\ExpressCraftDemo.meta.js" />
     <Content Include="bin\Debug\Bridge\index.html" />
-    <Content Include="bin\Debug\Bridge\jquery-2.2.4.js" />
-    <Content Include="bin\Debug\Bridge\newtonsoft.json.js" />
     <Content Include="Bridge\ExpressCraft.css" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
