@@ -221,8 +221,8 @@ namespace ExpressCraftDemo
                 }
             };
 
-            newEn.Style.FontSize = "14px";
-            newDialog.Style.FontSize = "14px";
+            newEn.Style.fontSize = "14px";
+            newDialog.Style.fontSize = "14px";
 
             hideSplitter.Panel.AppendChildren(newEn, newDialog);
             
